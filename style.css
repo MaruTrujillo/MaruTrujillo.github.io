@@ -1,5 +1,33 @@
 body {
   font-family: "Lato", sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/wendy.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(161, 158, 158, 0.81);
+  z-index: -1;
 }
 
 h1 {
@@ -12,8 +40,14 @@ h1 {
 h2 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 10px;
   text-align: center;
+  display: block;
+}
+
+h3 {
+  font-size: .9rem;
+  font-weight: bold;
+  text-align: left;
 }
 
 .parent-container{
@@ -34,10 +68,56 @@ h2 {
 .header {
   width: 100%;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 
-.input-box {
-  width:20%;
+.input-box,
+.input-box-mor-spi,
+.input-box-mor-cla,
+.input-box-mor-gril,
+.input-box-mor-nug,
+.input-box-mor-stri,
+.input-box-aft-spi,
+.input-box-aft-cla,
+.input-box-aft-gril,
+.input-box-aft-nug,
+.input-box-aft-stri,
+.input-box-nig-spi,
+.input-box-nig-cla,
+.input-box-nig-gril,
+.input-box-nig-nug,
+.input-box-nig-stri
+{
+  width:40%;
+}
+
+
+.input-box-morn-spi,
+.input-box-morn-cla,
+.input-box-morn-gril,
+.input-box-morn-nug,
+.input-box-morn-stri,
+.input-box-after-spi,
+.input-box-after-cla,
+.input-box-after-gril,
+.input-box-after-nug,
+.input-box-after-stri,
+.input-box-night-spi,
+.input-box-night-cla,
+.input-box-night-gril,
+.input-box-night-nug,
+.input-box-night-stri,
+.input-box-pv-spi,
+.input-box-pv-cla,
+.input-box-pv-gril,
+.input-box-pv-nug,
+.input-box-pv-stri,
+.input-box-pv-night-spi,
+.input-box-pv-night-cla,
+.input-box-pv-night-gril,
+.input-box-pv-night-nug,
+.input-box-pv-night-stri{
+  width: 80%;
 }
 
 .input-label {
@@ -54,3 +134,15 @@ h2 {
   font-weight: bold;
 }
 
+
+footer {
+  display: block;
+  font-style: italic;
+  font-weight: bolder;
+  padding-top: 2%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+  text-decoration:none !important;
+}

@@ -1,603 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Chicken count</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Chicken count</title>
+</head>
 <body>
-  
+
   <h1>Morning</h1>
   <div class="parent-container">
-    
-    <div id="chickenCount">
+
+    <div id="MorningchickenCount">
       <div id="spicy" class="container">
         <div class="header">Spicy</div>
         <div class="counter">
-          <input type="text" class="input-box-mor-spi" placeholder="Input 1">
+          <input type="text" class="input-box-mor-spi" placeholder="Input 1" value="2">
           <span class="input-label">x100</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-mor-spi" placeholder="Input 2">
+          <input type="text" class="input-box-mor-spi" placeholder="Input 2" value="2">
           <span class="input-label">x10</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-mor-spi" placeholder="Input 3">
+          <input type="text" class="input-box-mor-spi" placeholder="Input 3" value="2">
           <span class="input-label">x1</span>
         </div>
         <div class="result">
-          <div class="result-text-mor-spi">0</div>
+          <div class="result-text">0</div>
           <div class="result-label">Result</div>
         </div>
       </div>
       <div id="classic" class="container">
         <div class="header">Classic</div>
         <div class="counter">
-          <input type="text" class="input-box-mor-cla" placeholder="Input 1">
+          <input type="text" class="input-box-mor-cla" placeholder="Input 1" value="2">
           <span class="input-label">x100</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-mor-cla" placeholder="Input 2">
+          <input type="text" class="input-box-mor-cla" placeholder="Input 2" value="2">
           <span class="input-label">x10</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-mor-cla" placeholder="Input 3">
+          <input type="text" class="input-box-mor-cla" placeholder="Input 3" value="2">
           <span class="input-label">x1</span>
         </div>
         <div class="result">
-          <div class="result-text-mor-cla">0</div>
+          <div class="result-text">0</div>
           <div class="result-label">Result</div>
         </div>
       </div>
       <div id="grill" class="container">
         <div class="header">Grill</div>
         <div class="counter">
-          <input type="text" class="input-box-mor-gril" placeholder="Input 1">
+          <input type="text" class="input-box-mor-gril" placeholder="Input 1" value="2">
           <span class="input-label">x100</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-mor-gril" placeholder="Input 2">
+          <input type="text" class="input-box-mor-gril" placeholder="Input 2" value="2">
           <span class="input-label">x10</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-mor-gril" placeholder="Input 3">
+          <input type="text" class="input-box-mor-gril" placeholder="Input 3" value="2">
           <span class="input-label">x1</span>
         </div>
         <div class="result">
-          <div class="result-text-mor-gril">0</div>
+          <div class="result-text">0</div>
           <div class="result-label">Result</div>
         </div>
       </div>
-      <div id="nuggets" class="container">
+    
+
+    
+      <div id="nug" class="container">
         <div class="header">Nuggets</div>
         <div class="counter">
-          <input type="text" class="input-box-mor-nug" placeholder="Input 1">
+          <input type="text" class="input-box-mor-nug" placeholder="Input 1" value="2">
           <span class="input-label">x760</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-mor-nug" placeholder="Input 2">
+          <input type="text" class="input-box-mor-nug" placeholder="Input 2" value="2">
           <span class="input-label">x38</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-mor-nug" placeholder="Input 3">
+          <input type="text" class="input-box-mor-nug" placeholder="Input 3" value="2">
           <span class="input-label">x1</span>
         </div>
         <div class="result">
-          <div class="result-text-mor-nug">0</div>
+          <div class="result-text">0</div>
           <div class="result-label">Result</div>
         </div>
       </div>
       <div id="strips" class="container">
         <div class="header">Strips</div>
         <div class="counter">
-          <input type="text" class="input-box-mor-stri" placeholder="Input 1">
+          <input type="text" class="input-box-mor-stri" placeholder="Input 1" value="2">
           <span class="input-label">x252</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-mor-stri" placeholder="Input 2">
+          <input type="text" class="input-box-mor-stri" placeholder="Input 2" value="2">
           <span class="input-label">x18</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-mor-stri" placeholder="Input 3">
+          <input type="text" class="input-box-mor-stri" placeholder="Input 3" value="2">
           <span class="input-label">x1</span>
         </div>
         <div class="result">
-          <div class="result-text-mor-stri">0</div>
-          <div class="result-label">Result</div>
-        </div>
-    </div>
-    <div id="generate-btn-mor" class="container">
-      <button onclick="calculateResults()">Generate Results</button>
-    </div>
-  </div>
-    
-  </div>
-  <h1>Mid</h1>
-  <div class="parent-container">
-    <div id="chickenCount">
-      <h2> On-line </h2>
-      <div id="spicy" class="container">
-        <div class="header">Spicy</div>
-          <div class="counter">
-            <input type="text" class="input-box-aft-spi" placeholder="Input 2">
-            <span class="input-label">x10</span>
-          </div>
-          <div class="counter">
-            <input type="text" class="input-box-aft-spi" placeholder="Input 3">
-            <span class="input-label">x1</span>
-          </div>
-      </div>
-      <div id="classic" class="container">
-        <div class="header">Classic</div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-cla" placeholder="Input 2">
-          <span class="input-label">x10</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-cla" placeholder="Input 3">
-          <span class="input-label">x1</span>
-        </div>       
-      </div>
-      <div id="grill" class="container">
-        <div class="header">Grill</div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-gril" placeholder="Input 2">
-          <span class="input-label">x10</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-gril" placeholder="Input 3">
-          <span class="input-label">x1</span>
-        </div>
-      </div>
-      <div id="nuggets" class="container">
-        <div class="header">Nuggets</div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-nug" placeholder="Input 2">
-          <span class="input-label">x38</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-nug" placeholder="Input 3">
-          <span class="input-label">x1</span>
-        </div>
-      </div>
-      <div id="strips" class="container">
-        <div class="header">Strips</div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-stri" placeholder="Input 2">
-
-          <span class="input-label">x18</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-stri" placeholder="Input 3">
-          <span class="input-label">x1</span>
-        </div>
-      </div>
-      <h2>Freezer</h2>
-      <div id="spicy" class="container">
-        <div class="header">Spicy</div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-spi" placeholder="Input 1">
-          <span class="input-label">x100</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-spi" placeholder="Input 4">
-          <span class="input-label">x10</span>
-        </div>
-        <div class="result">
-          <div class="result-text-aft-spi">0</div>
+          <div class="result-text">0</div>
           <div class="result-label">Result</div>
         </div>
       </div>
-      <div id="classic" class="container">
-        <div class="header">Classic</div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-cla" placeholder="Input 1">
-          <span class="input-label">x100</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-cla" placeholder="Input 4">
-          <span class="input-label">x10</span>
-        </div>
-        <div class="result">
-          <div class="result-text-aft-cla">0</div>
-          <div class="result-label">Result</div>
-        </div>
-      </div>
-      <div id="grill" class="container">
-        <div class="header">Grill</div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-gril" placeholder="Input 1">
-          <span class="input-label">x100</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-gril" placeholder="Input 4">
-          <span class="input-label">x10</span>
-        </div>
-        <div class="result">
-          <div class="result-text-aft-gril">0</div>
-          <div class="result-label">Result</div>
-        </div>
-      </div>
-      <div id="nuggets" class="container">
-        <div class="header">Nuggets</div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-nug" placeholder="Input 1">
-          <span class="input-label">x760</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-nug" placeholder="Input 4">
-          <span class="input-label">x38</span>
-        </div>
-        <div class="result">
-          <div class="result-text-aft-nug">0</div>
-          <div class="result-label">Result</div>
-        </div>
-      </div>
-      <div id="strips" class="container">
-        <div class="header">Strips</div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-stri" placeholder="Input 1">
-          <span class="input-label">x252</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-aft-stri" placeholder="Input 4">
-          <span class="input-label">x18</span>
-        </div>
-        <div class="result">
-          <div class="result-text-aft-stri">0</div>
-          <div class="result-label">Result</div>
-        </div>
-      </div>
-
-      <div id="generate-btn-aft" class="container">
-        <button>Generate Results</button>
-      </div>
-
       
-      <div class="aft-dif">
-        <div class="diff">
-          <h3>Afternoon Difference</h3>
-          <div id="difference" class="container">
-            <div class="header">Spicy</div>
-            <div class="counter">
-              <input type="text" class="input-box-morn-spi" placeholder="Input 10">
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="header">Classic</div>
-            <div class="counter">
-              <input type="text" class="input-box-morn-cla" placeholder="Input 10">
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="header">Grill</div>
-            <div class="counter">
-              <input type="text" class="input-box-morn-gril" placeholder="Input 10">
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="header">Nuggets</div>
-            <div class="counter">
-              <input type="text" class="input-box-morn-nug" placeholder="Input 10">
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="header">Strips</div>
-            <div class="counter">
-              <input type="text" class="input-box-morn-stri" placeholder="Input 10">
-            </div>
-          </div>
-        </div>
     
-        <div class="diff">
-          <div id="difference" class="container">
-            <div class="counter">
-              <input type="text" class="input-box-after-spi" placeholder="Input 11">
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="counter">
-              <input type="text" class="input-box-after-cla" placeholder="Input 11">
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="counter">
-              <input type="text" class="input-box-after-gril" placeholder="Input 11">
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="counter">
-              <input type="text" class="input-box-after-nug" placeholder="Input 11">
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="counter">
-              <input type="text" class="input-box-after-stri" placeholder="Input 11">
-            </div>
-          </div>
-        </div>
-
-        <div class="diff">
-          <div id="difference" class="container">
-            <div class="counter">
-              <input type="text" class="input-box-pv-spi" placeholder="Input 12">
-            </div>
-            <div class="result">
-              <div class="result-text-morn-spi">0</div>
-              <div class="result-label">Result</div>
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="counter">
-              <input type="text" class="input-box-pv-cla" placeholder="Input 12">
-            </div>
-            <div class="result">
-              <div class="result-text-morn-cla">0</div>
-              <div class="result-label">Result</div>
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="counter">
-              <input type="text" class="input-box-pv-gril" placeholder="Input 12">
-            </div>
-            <div class="result">
-              <div class="result-text-morn-gril">0</div>
-              <div class="result-label">Result</div>
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="counter">
-              <input type="text" class="input-box-pv-nug" placeholder="Input 12">
-            </div>
-            <div class="result">
-              <div class="result-text-morn-nug">0</div>
-              <div class="result-label">Result</div>
-            </div>
-          </div>
-          <div id="difference" class="container">
-            <div class="counter">
-              <input type="text" class="input-box-pv-stri" placeholder="Input 12">
-            </div>
-            <div class="result">
-              <div class="result-text-morn-stri">0</div>
-              <div class="result-label">Result</div>
-            </div>
-          </div>
-        </div>
-        <div id="generate-btn-after" class="container">
-          <button>Generate Results</button>
-        </div>
-      </div>
     </div>
-   
+
+    <button class="center-button" onclick="calculateResults('MorningchickenCount')">Calculate</button>
+
   </div>
-  
-  
   <h1>Night</h1>
   <div class="parent-container">
-    
-    <div id="chickenCount">
-      <div id="spicy" class="container">
+
+    <div id="NightchickenCount">
+      <div class="spicy container">
         <div class="header">Spicy</div>
         <div class="counter">
-          <input type="text" class="input-box-nig-spi" placeholder="Input 1">
+          <input type="text" class="input-box-nig-spi" placeholder="Input 1" value="2">
           <span class="input-label">x100</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-nig-spi" placeholder="Input 2">
+          <input type="text" class="input-box-nig-spi" placeholder="Input 2" value="2">
           <span class="input-label">x10</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-nig-spi" placeholder="Input 3">
+          <input type="text" class="input-box-nig-spi" placeholder="Input 3" value="2">
           <span class="input-label">x1</span>
         </div>
         <div class="result">
-          <div class="result-text-nig-spi">0</div>
+          <div class="result-text">0</div>
           <div class="result-label">Result</div>
         </div>
       </div>
-      <div id="classic" class="container">
+      <div class="classic container">
         <div class="header">Classic</div>
         <div class="counter">
-          <input type="text" class="input-box-nig-cla" placeholder="Input 1">
+          <input type="text" class="input-box-nig-cla" placeholder="Input 1" value="2">
           <span class="input-label">x100</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-nig-cla" placeholder="Input 2">
+          <input type="text" class="input-box-nig-cla" placeholder="Input 2" value="2">
           <span class="input-label">x10</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-nig-cla" placeholder="Input 3">
+          <input type="text" class="input-box-nig-cla" placeholder="Input 3" value="2">
           <span class="input-label">x1</span>
         </div>
         <div class="result">
-          <div class="result-text-nig-cla">0</div>
+          <div class="result-text">0</div>
           <div class="result-label">Result</div>
         </div>
       </div>
-      <div id="grill" class="container">
+      <div class="grill container">
         <div class="header">Grill</div>
         <div class="counter">
-          <input type="text" class="input-box-nig-gril" placeholder="Input 1">
+          <input type="text" class="input-box-nig-gril" placeholder="Input 1" value="2">
           <span class="input-label">x100</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-nig-gril" placeholder="Input 2">
+          <input type="text" class="input-box-nig-gril" placeholder="Input 2" value="2">
           <span class="input-label">x10</span>
         </div>
         <div class="counter">
-          <input type="text" class="input-box-nig-gril" placeholder="Input 3">
+          <input type="text" class="input-box-nig-gril" placeholder="Input 3" value="2">
           <span class="input-label">x1</span>
         </div>
         <div class="result">
-          <div class="result-text-nig-gril">0</div>
+          <div class="result-text">0</div>
           <div class="result-label">Result</div>
         </div>
       </div>
-      <div id="nuggets" class="container">
-        <div class="header">Nuggets</div>
-        <div class="counter">
-          <input type="text" class="input-box-nig-nug" placeholder="Input 1">
-          <span class="input-label">x760</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-nig-nug" placeholder="Input 2">
-          <span class="input-label">x38</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-nig-nug" placeholder="Input 3">
-          <span class="input-label">x1</span>
-        </div>
-        <div class="result">
-          <div class="result-text-nig-nug">0</div>
-          <div class="result-label">Result</div>
-        </div>
-      </div>
-      <div id="strips" class="container">
-        <div class="header">Strips</div>
-        <div class="counter">
-          <input type="text" class="input-box-nig-stri" placeholder="Input 1">
-          <span class="input-label">x252</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-nig-stri" placeholder="Input 2">
-          <span class="input-label">x18</span>
-        </div>
-        <div class="counter">
-          <input type="text" class="input-box-nig-stri" placeholder="Input 3">
-          <span class="input-label">x1</span>
-        </div>
-        <div class="result">
-          <div class="result-text-nig-stri">0</div>
-          <div class="result-label">Result</div>
-        </div>
-    </div>
-    <div id="generate-btn-nig" class="container">
-      <button>Generate Results</button>
-    </div>
-    <div class="nig-dif">
-      <div class="diff">
-        <h3>Night Difference</h3>
-        <div id="difference" class="container">
-          <div class="header">Spicy</div>
-          <div class="counter">
-            <input type="text" class="input-box-morn-spi" placeholder="Input 10">
-          </div>
-        </div>
-        <div id="difference" class="container">
-          <div class="header">Classic</div>
-          <div class="counter">
-            <input type="text" class="input-box-morn-cla" placeholder="Input 10">
-          </div>
-        </div>
-        <div id="difference" class="container">
-          <div class="header">Grill</div>
-          <div class="counter">
-            <input type="text" class="input-box-morn-gril" placeholder="Input 10">
-          </div>
-        </div>
-        <div id="difference" class="container">
+      
+        <div id="nug" class="container">
           <div class="header">Nuggets</div>
           <div class="counter">
-            <input type="text" class="input-box-morn-nug" placeholder="Input 10">
+            <input type="text" class="input-box-nig-nug" placeholder="Input 1" value="2">
+            <span class="input-label">x760</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-nig-nug" placeholder="Input 2" value="2">
+            <span class="input-label">x38</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-nig-nug" placeholder="Input 3" value="2">
+            <span class="input-label">x1</span>
+          </div>
+          <div class="result">
+            <div class="result-text">0</div>
+            <div class="result-label">Result</div>
           </div>
         </div>
-        <div id="difference" class="container">
+        <div id="strips" class="container">
           <div class="header">Strips</div>
           <div class="counter">
-            <input type="text" class="input-box-morn-stri" placeholder="Input 10">
+            <input type="text" class="input-box-nig-stri" placeholder="Input 1" value="2">
+            <span class="input-label">x252</span>
           </div>
-        </div>
-      </div>
-  
-      <div class="diff">
-        <div id="difference" class="container">
           <div class="counter">
-            <input type="text" class="input-box-night-spi" placeholder="Input 11">
+            <input type="text" class="input-box-nig-stri" placeholder="Input 2" value="2">
+            <span class="input-label">x18</span>
           </div>
-        </div>
-        <div id="difference" class="container">
           <div class="counter">
-            <input type="text" class="input-box-night-cla" placeholder="Input 11">
-          </div>
-        </div>
-        <div id="difference" class="container">
-          <div class="counter">
-            <input type="text" class="input-box-night-gril" placeholder="Input 11">
-          </div>
-        </div>
-        <div id="difference" class="container">
-          <div class="counter">
-            <input type="text" class="input-box-night-nug" placeholder="Input 11">
-          </div>
-        </div>
-        <div id="difference" class="container">
-          <div class="counter">
-            <input type="text" class="input-box-night-stri" placeholder="Input 11">
-          </div>
-        </div>
-      </div>
-
-      <div class="diff">
-        <div id="difference" class="container">
-          <div class="counter">
-            <input type="text" class="input-box-pv-nig-spi" placeholder="Input 12">
+            <input type="text" class="input-box-nig-stri" placeholder="Input 3" value="2">
+            <span class="input-label">x1</span>
           </div>
           <div class="result">
-            <div class="result-text-night-spi">0</div>
+            <div class="result-text">0</div>
             <div class="result-label">Result</div>
           </div>
         </div>
-        <div id="difference" class="container">
-          <div class="counter">
-            <input type="text" class="input-box-pv-night-cla" placeholder="Input 12">
-          </div>
-          <div class="result">
-            <div class="result-text-night-cla">0</div>
-            <div class="result-label">Result</div>
-          </div>
-        </div>
-        <div id="difference" class="container">
-          <div class="counter">
-            <input type="text" class="input-box-pv-night-gril" placeholder="Input 12">
-          </div>
-          <div class="result">
-            <div class="result-text-night-gril">0</div>
-            <div class="result-label">Result</div>
-          </div>
-        </div>
-        <div id="difference" class="container">
-          <div class="counter">
-            <input type="text" class="input-box-pv-night-nug" placeholder="Input 12">
-          </div>
-          <div class="result">
-            <div class="result-text-night-nug">0</div>
-            <div class="result-label">Result</div>
-          </div>
-        </div>
-        <div id="difference" class="container">
-          <div class="counter">
-            <input type="text" class="input-box-pv-night-stri" placeholder="Input 12">
-          </div>
-          <div class="result">
-            <div class="result-text-pv-night-stri">0</div>
-            <div class="result-label">Result</div>
-          </div>
-        </div>
-      </div>
-      <div id="generate-btn-night" class="container">
-        <button>Generate Results</button>
-      </div>
+        
+      
     </div>
+
+    <button class="center-button" onclick="calculateResults('NightchickenCount')">Calculate</button>
+
   </div>
-    
-  </div>
+ 
   <script src="script.js"></script>
 </body>
-<footer>
-  <div class="footer">
-    <div class="footer-text" >Developed by <a href="mailto:kael.m0211@gmail.com " style="text-decoration:none">Kael Moreira</a></div>
-  </div>
-</footer>
 </html>

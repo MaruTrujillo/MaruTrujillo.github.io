@@ -20,7 +20,7 @@ body::after {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  opacity: 0.4;
+  opacity: 0.2;
   z-index: -1;
 }
 
@@ -125,7 +125,11 @@ h3 {
 .input-box-pv-night-gril,
 .input-box-pv-night-nug,
 .input-box-pv-night-stri {
-  width: 80%;
+  width: 50%;
+}
+
+.input-box-aft {
+  width: 50% !important;
 }
 
 .input-label {
@@ -172,3 +176,27 @@ footer {
     background-color: #45a049;
   }
 
+  .total-container {
+    display: flex;
+  }
+  
+  .total {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .result-text {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .result-label {
+    font-size: 15px;
+    color: #000;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+ 
+  

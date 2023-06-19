@@ -38,10 +38,6 @@ the code will be commented on where the changes can be made to start making it c
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
-## Credits
-This project was insipired by this tutorial in youtube by Web Dev SImplified, added functionality so it didnt only work with minutes and seconds, but with an actual date and kept the time even if the page is refreshed.
-
-[video Link](https://www.youtube.com/watch?v=p_6IuhmBsfc)
 
 ## License
 

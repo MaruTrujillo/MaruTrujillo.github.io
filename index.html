@@ -1,0 +1,569 @@
+-<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Chicken count</title>
+</head>
+<body>
+
+
+  <h1>Morning</h1>
+  <form action="/calculateMorning" method="post">
+    <div class="parent-container">
+      <div id="MorningchickenCount">
+        <div id="spicy" class="container">
+          <div class="header">Spicy</div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-spi" placeholder="Input 1" value="2">
+            <span class="input-label">x100</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-spi" placeholder="Input 2" value="2">
+            <span class="input-label">x10</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-spi" placeholder="Input 3" value="2">
+            <span class="input-label">x1</span>
+          </div>
+          <div class="result">
+            <div class="result-text">0</div>
+            <div class="result-label">Result</div>
+          </div>
+        </div>
+        <div id="classic" class="container">
+          <div class="header">Classic</div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-cla" placeholder="Input 1" value="2">
+            <span class="input-label">x100</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-cla" placeholder="Input 2" value="2">
+            <span class="input-label">x10</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-cla" placeholder="Input 3" value="2">
+            <span class="input-label">x1</span>
+          </div>
+          <div class="result">
+            <div class="result-text">0</div>
+            <div class="result-label">Result</div>
+          </div>
+        </div>
+        <div id="grill" class="container">
+          <div class="header">Grill</div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-gril" placeholder="Input 1" value="2">
+            <span class="input-label">x100</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-gril" placeholder="Input 2" value="2">
+            <span class="input-label">x10</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-gril" placeholder="Input 3" value="2">
+            <span class="input-label">x1</span>
+          </div>
+          <div class="result">
+            <div class="result-text">0</div>
+            <div class="result-label">Result</div>
+          </div>
+        </div>
+        <div id="nug" class="container">
+          <div class="header">Nuggets</div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-nug" placeholder="Input 1" value="2">
+            <span class="input-label">x760</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-nug" placeholder="Input 2" value="2">
+            <span class="input-label">x38</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-nug" placeholder="Input 3" value="2">
+            <span class="input-label">x1</span>
+          </div>
+          <div class="result">
+            <div class="result-text">0</div>
+            <div class="result-label">Result</div>
+          </div>
+        </div>
+        <div id="strips" class="container">
+          <div class="header">Strips</div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-stri" placeholder="Input 1" value="2">
+            <span class="input-label">x252</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-stri" placeholder="Input 2" value="2">
+            <span class="input-label">x18</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-mor-stri" placeholder="Input 3" value="2">
+            <span class="input-label">x1</span>
+          </div>
+          <div class="result">
+            <div class="result-text">0</div>
+            <div class="result-label">Result</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="center-button" onclick="calculateResult('MorningchickenCount')">Calculate</button>
+
+    </div>
+  </form>
+
+
+  <h1>Mid</h1>
+<div class="parent-container-mid">
+  <div id="On-line">
+    <h2>On-line</h2>
+    <div class="spicy container">
+      <div class="header">Spicy</div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 2" value="2">
+        <span class="input-label">x10</span>
+      </div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 3" value="2">
+        <span class="input-label">x1</span>
+      </div>
+      <div class="result">
+        <div class="result-text">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div class="classic container">
+      <div class="header">Classic</div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 2" value="2">
+        <span class="input-label">x10</span>
+      </div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 3" value="2">
+        <span class="input-label">x1</span>
+      </div>
+      <div class="result">
+        <div class="result-text">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div class="grill container">
+      <div class="header">Grill</div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 2" value="2">
+        <span class="input-label">x10</span>
+      </div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 3" value="2">
+        <span class="input-label">x1</span>
+      </div>
+      <div class="result">
+        <div class="result-text">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div class="nugget container">
+      <div class="header">Nuggets</div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 2" value="2">
+        <span class="input-label">x38</span>
+      </div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 3" value="2">
+        <span class="input-label">x1</span>
+      </div>
+      <div class="result">
+        <div class="result-text">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div class="strips container">
+      <div class="header">Strips</div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 2" value="2">
+        <span class="input-label">x18</span>
+      </div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 3" value="2">
+        <span class="input-label">x1</span>
+      </div>
+      <div class="result">
+        <div class="result-text">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <button onclick="calculateResults('On-line')">Calculate</button>
+  </div>
+  <div id="Freezer">
+    <h2>Freezer</h2>
+    <div class="spicy container">
+      <div class="header">Spicy</div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 2" value="2">
+        <span class="input-label">x100</span>
+      </div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 3" value="2">
+        <span class="input-label">x10</span>
+      </div>
+      <div class="result">
+        <div class="result-text">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div class="classic container">
+      <div class="header">Classic</div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 2" value="2">
+        <span class="input-label">x100</span>
+      </div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 3" value="2">
+        <span class="input-label">x10</span>
+      </div>
+      <div class="result">
+        <div class="result-text">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div class="grill container">
+      <div class="header">Grill</div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 2" value="2">
+        <span class="input-label">x100</span>
+      </div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 3" value="2">
+        <span class="input-label">x10</span>
+      </div>
+      <div class="result">
+        <div class="result-text">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div class="nugget container">
+      <div class="header">Nuggets</div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 2" value="2">
+        <span class="input-label">x760</span>
+      </div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 3" value="2">
+        <span class="input-label">x38</span>
+      </div>
+      <div class="result">
+        <div class="result-text">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div class="strips container">
+      <div class="header">Strips</div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 2" value="2">
+        <span class="input-label">x252</span>
+      </div>
+      <div class="counter">
+        <input type="text" class="input-box-aft" placeholder="Input 3" value="2">
+        <span class="input-label">x18</span>
+      </div>
+      <div class="result">
+        <div class="result-text">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <button onclick="calculateResults('Freezer')">Calculate</button>
+  </div>
+</div>
+<h1>Total Mid</h1>
+<div class="total-container">
+  <div class="total spicy-total">
+    <div class="header">Spicy</div>
+    <div class="result-text">0</div>
+    <div class="result-label">Result</div>
+  </div>
+  <div class="total classic-total">
+    <div class="header">Classic</div>
+    <div class="result-text">0</div>
+    <div class="result-label">Result</div>
+  </div>
+  <div class="total grill-total">
+    <div class="header">Grill</div>
+    <div class="result-text">0</div>
+    <div class="result-label">Result</div>
+  </div>
+  <div class="total nugget-total">
+    <div class="header">Nuggets</div>
+    <div class="result-text">0</div>
+    <div class="result-label">Result</div>
+  </div>
+  <div class="total strips-total">
+    <div class="header">Strips</div>
+    <div class="result-text">0</div>
+    <div class="result-label">Result</div>
+  </div>
+</div>
+
+  
+    
+<h2>Afternoon Difference</h2>
+<div class="aft-dif">
+  <div class="diff">
+    <div id="difference" class="container">
+      <div class="header">Spicy</div>
+      <div class="counter">
+        <input type="text" class="input-box-morn-spi" placeholder="Input 10">
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="header">Classic</div>
+      <div class="counter">
+        <input type="text" class="input-box-morn-cla" placeholder="Input 10">
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="header">Grill</div>
+      <div class="counter">
+        <input type="text" class="input-box-morn-gril" placeholder="Input 10">
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="header">Nuggets</div>
+      <div class="counter">
+        <input type="text" class="input-box-morn-nug" placeholder="Input 10">
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="header">Strips</div>
+      <div class="counter">
+        <input type="text" class="input-box-morn-stri" placeholder="Input 10">
+      </div>
+    </div>
+  </div>
+
+  <div class="aft-diff">
+    <div id="difference" class="container">
+      <div class="counter">
+        <input type="text" class="input-box-after-spi" placeholder="Input 11">
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="counter">
+        <input type="text" class="input-box-after-cla" placeholder="Input 11">
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="counter">
+        <input type="text" class="input-box-after-gril" placeholder="Input 11">
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="counter">
+        <input type="text" class="input-box-after-nug" placeholder="Input 11">
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="counter">
+        <input type="text" class="input-box-after-stri" placeholder="Input 11">
+      </div>
+    </div>
+  </div>
+<h2>Morning and afternoon difference </h2>
+<div class="aft-diff">
+  <div id="difference" class="container">
+    <div class="counter">
+      <input type="text" class="input-box-diffAft-spi" placeholder="Input 12">
+    </div>
+  </div>
+  <div id="difference" class="container">
+    <div class="counter">
+      <input type="text" class="input-box-diffAft-cla" placeholder="Input 12">
+    </div>
+  </div>
+  <div id="difference" class="container">
+    <div class="counter">
+      <input type="text" class="input-box-diffAft-gril" placeholder="Input 12">
+    </div>
+  </div>
+  <div id="difference" class="container">
+    <div class="counter">
+      <input type="text" class="input-box-diffAft-nug" placeholder="Input 12">
+    </div>
+  </div>
+  <div id="difference" class="container">
+    <div class="counter">
+      <input type="text" class="input-box-diffAft-stri" placeholder="Input 12">
+    </div>
+  </div>
+</div>
+
+  <div class="aft-diff">
+    <div id="difference" class="container">
+      <div class="counter">
+        <input type="text" class="input-box-pv-spi" placeholder="Input 13" value="45">
+      </div>
+      <div class="result">
+        <div class="result-text-morn-spi">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="counter">
+        <input type="text" class="input-box-pv-cla" placeholder="Input 13" value="45">
+      </div>
+      <div class="result">
+        <div class="result-text-morn-cla">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="counter">
+        <input type="text" class="input-box-pv-gril" placeholder="Input 13" value="45">
+      </div>
+      <div class="result">
+        <div class="result-text-morn-gril">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="counter">
+        <input type="text" class="input-box-pv-nug" placeholder="Input 13" value="45">
+      </div>
+      <div class="result">
+        <div class="result-text-morn-nug">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+    <div id="difference" class="container">
+      <div class="counter">
+        <input type="text" class="input-box-pv-stri" placeholder="Input 13" value="45">
+      </div>
+      <div class="result">
+        <div class="result-text-morn-stri">0</div>
+        <div class="result-label">Result</div>
+      </div>
+    </div>
+  </div>
+  <div id="generate-btn-after" class="container">
+    <button>Generate Results</button>
+  </div>
+</div>
+</div>
+
+</div>
+  
+
+
+
+  <h1>Night</h1>
+  <div class="parent-container">
+
+    <div id="NightchickenCount">
+      <div class="spicy container">
+        <div class="header">Spicy</div>
+        <div class="counter">
+          <input type="text" class="input-box-nig-spi" placeholder="Input 1" value="2">
+          <span class="input-label">x100</span>
+        </div>
+        <div class="counter">
+          <input type="text" class="input-box-nig-spi" placeholder="Input 2" value="2">
+          <span class="input-label">x10</span>
+        </div>
+        <div class="counter">
+          <input type="text" class="input-box-nig-spi" placeholder="Input 3" value="2">
+          <span class="input-label">x1</span>
+        </div>
+        <div class="result">
+          <div class="result-text">0</div>
+          <div class="result-label">Result</div>
+        </div>
+      </div>
+      <div class="classic container">
+        <div class="header">Classic</div>
+        <div class="counter">
+          <input type="text" class="input-box-nig-cla" placeholder="Input 1" value="2">
+          <span class="input-label">x100</span>
+        </div>
+        <div class="counter">
+          <input type="text" class="input-box-nig-cla" placeholder="Input 2" value="2">
+          <span class="input-label">x10</span>
+        </div>
+        <div class="counter">
+          <input type="text" class="input-box-nig-cla" placeholder="Input 3" value="2">
+          <span class="input-label">x1</span>
+        </div>
+        <div class="result">
+          <div class="result-text">0</div>
+          <div class="result-label">Result</div>
+        </div>
+      </div>
+      <div class="grill container">
+        <div class="header">Grill</div>
+        <div class="counter">
+          <input type="text" class="input-box-nig-gril" placeholder="Input 1" value="2">
+          <span class="input-label">x100</span>
+        </div>
+        <div class="counter">
+          <input type="text" class="input-box-nig-gril" placeholder="Input 2" value="2">
+          <span class="input-label">x10</span>
+        </div>
+        <div class="counter">
+          <input type="text" class="input-box-nig-gril" placeholder="Input 3" value="2">
+          <span class="input-label">x1</span>
+        </div>
+        <div class="result">
+          <div class="result-text">0</div>
+          <div class="result-label">Result</div>
+        </div>
+      </div>
+      
+        <div id="nug" class="container">
+          <div class="header">Nuggets</div>
+          <div class="counter">
+            <input type="text" class="input-box-nig-nug" placeholder="Input 1" value="2">
+            <span class="input-label">x760</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-nig-nug" placeholder="Input 2" value="2">
+            <span class="input-label">x38</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-nig-nug" placeholder="Input 3" value="2">
+            <span class="input-label">x1</span>
+          </div>
+          <div class="result">
+            <div class="result-text">0</div>
+            <div class="result-label">Result</div>
+          </div>
+        </div>
+        <div id="strips" class="container">
+          <div class="header">Strips</div>
+          <div class="counter">
+            <input type="text" class="input-box-nig-stri" placeholder="Input 1" value="2">
+            <span class="input-label">x252</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-nig-stri" placeholder="Input 2" value="2">
+            <span class="input-label">x18</span>
+          </div>
+          <div class="counter">
+            <input type="text" class="input-box-nig-stri" placeholder="Input 3" value="2">
+            <span class="input-label">x1</span>
+          </div>
+          <div class="result">
+            <div class="result-text">0</div>
+            <div class="result-label">Result</div>
+          </div>
+        </div>
+        
+      
+    </div>
+
+    <button class="center-button" onclick="calculateResult('NightchickenCount')">Calculate</button>
+
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>

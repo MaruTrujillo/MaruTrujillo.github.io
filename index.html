@@ -34,8 +34,10 @@
 </head>
 
 <body>
- 
-    <!-- Loader -->
+<? php
+    require 'send_email.php';
+    ?>
+<!-- Loader -->
     <div id="ms-overlay">
         <div class="ms-roller">
             <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
@@ -109,8 +111,8 @@
                         <h1>Meet me <span>Maria Trujillo</span></h1>
                         <h2><span>-</span>I'm a Multimedia Designer</h2>
                         <p>I’m a very cheerful person, and I enjoy working with others, can learn new techniques fast, and easily to adapt to any situation given to me. I can work under pressure and tight deadlines.</p>
-                        <a class="custom-btn ms-btn m-r-5px" href="javascript:void(0)">Download CV</a>
-                        <a class="custom-btn ms-btn-1 nav-about" href="javascript:void(0)">More Info</a>
+                        <a class="custom-btn ms-btn m-r-5px" href="assets/downloads/CVMARU-Recovered.pdf" download>Download CV</a>
+                        <a class="custom-btn ms-btn-1 nav-about" href="https://www.linkedin.com/in/mar%C3%ADa-eugenia-trujillo-baquero-3465b3b1/">More Info</a>
                     </div>
                 </div>
                 <div class="scroll-down"></div>
@@ -532,21 +534,33 @@
                     <iframe src="//maps.google.com/maps?q=44.231172,-76.485954&z=15&output=embed" allowfullscreen=""></iframe>
                 </div>
                 <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-                    <form>
+                    <form action="send_email.php" method="post" onsubmit="return validateForm()">
                         <div class="form-group" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-                            <input type="text" class="form-control" id="fname" placeholder="Full Name">
+                            <input type="text" class="form-control" name="fullname" placeholder="Full Name" required>
                         </div>
                         <div class="form-group" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
-                          <input type="email" class="form-control" id="umail" placeholder="Email">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
-                            <input type="text" class="form-control" id="phone" placeholder="Phone">
+                            <input type="text" class="form-control" name="phone" placeholder="Phone">
                         </div>
                         <div class="form-group" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                            <textarea class="form-control" name="message" rows="3" placeholder="Message" required></textarea>
                         </div>
                         <button type="submit" class="custom-btn ms-btn-1" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700">Submit</button>
-                      </form>
+                    </form>
+                    <script>
+                        function validateForm() {
+                            var fullname = document.forms["contactForm"]["fullname"].value;
+                            var email = document.forms["contactForm"]["email"].value;
+                            var message = document.forms["contactForm"]["message"].value;
+
+                            if (fullname === "" || email === "" || message === "") {
+                                alert("Please fill in all required fields.");
+                                return false; // Prevent form submission
+                            }
+                        }
+                    </script>
                 </div>
             </div>
         </div>

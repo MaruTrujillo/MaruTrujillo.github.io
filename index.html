@@ -534,7 +534,7 @@
                     <iframe src="//maps.google.com/maps?q=44.231172,-76.485954&z=15&output=embed" allowfullscreen=""></iframe>
                 </div>
                 <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-                    <form action="send_email.php" method="post" onsubmit="return validateForm()">
+                    <form action="https://formspree.io/f/mqkvewak" method="post" onsubmit="return validateForm()">
                         <div class="form-group" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
                             <input type="text" class="form-control" name="fullname" placeholder="Full Name" required>
                         </div>
@@ -549,19 +549,20 @@
                         </div>
                         <button type="submit" class="custom-btn ms-btn-1" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700">Submit</button>
                     </form>
-                    <script>
-                        function validateForm() {
-                            var fullname = document.forms["contactForm"]["fullname"].value;
-                            var email = document.forms["contactForm"]["email"].value;
-                            var message = document.forms["contactForm"]["message"].value;
-
-                            if (fullname === "" || email === "" || message === "") {
-                                alert("Please fill in all required fields.");
-                                return false; // Prevent form submission
-                            }
-                        }
-                    </script>
                 </div>
+                <script>
+                    function validateForm() {
+                        var fullname = document.forms["contactForm"]["fullname"].value;
+                        var email = document.forms["contactForm"]["email"].value;
+                        var message = document.forms["contactForm"]["message"].value;
+
+                        if (fullname === "" || email === "" || message === "") {
+                            alert("Please fill in all required fields.");
+                            return false; // Prevent form submission
+                        }
+                    }
+                </script>
+
             </div>
         </div>
     </section>

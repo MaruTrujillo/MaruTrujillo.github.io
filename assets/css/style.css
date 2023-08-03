@@ -251,7 +251,11 @@ ul {
 ul li {
   list-style: none;
 }
+.custom-logo{
+  width: 40%;
+  height: 40%;
 
+}
 .navbar-dark .navbar-nav .nav-link {
   margin-left: 15px;
 }
@@ -841,73 +845,76 @@ header .active .nav-link {
 }
 
 /** Start Contact Section **/
+
+.bg-contact {
+  background-color: #323234 !important;
+}
 footer {
   padding: 5px 0;
-  background: #1b1c20;
+  background: #18181b;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
 }
 
 .ms-footer-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; /* Add text-align center to center child elements */
 }
+
 .ms-footer-detail .ms-copy {
   color: #fff;
   font-size: 14px;
   letter-spacing: 0.02rem;
 }
+
 .ms-footer-detail .ms-copy a {
   color: #7189cb;
 }
+
 .ms-footer-detail .ms-social ul {
   width: 150px;
   padding: 5px 10px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   border-radius: 30px;
 }
+
 .ms-footer-detail .ms-social ul li {
   margin-left: 5px;
 }
+
 .ms-footer-detail .ms-social ul li a {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 30px;
   height: 30px;
   line-height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: #333;
   border-radius: 30px;
 }
+
 .ms-footer-detail .ms-social ul li a i {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #fff;
 }
+
 .ms-footer-detail .ms-social ul li a:hover {
   background: #fff;
 }
+
 .ms-footer-detail .ms-social ul li a:hover i {
   color: #7189cb;
 }
+
 
 /** End Contact Section **/
 /*===== Side tool options css =====*/
